@@ -9,6 +9,14 @@ on:
     #   - '!master'   # excludes master
   workflow_dispatch:
 
+env:
+    # ADB_INSTALL_TIMEOUT: 8
+    ANDROID_API_LEVEL: 28
+    ANDROID_BUILD_TOOLS_VERSION: 28.0.3
+    # ANDROID_ABI: armeabi-v7a
+    # EMULATOR_API_LEVEL: 21
+    # PWD: `pwd`
+
 jobs:
   build:
     name: Build
